@@ -10,3 +10,45 @@
 .xyz2{
     background-color: var(--bgColor);
 }
+
+p::first-line{
+    color: blue;
+}
+
+::marker{
+    color: pink;
+    font-size: 25px;
+}
+
+/* Psuedo Classes */
+/* unvisted */
+a:link{
+    color: pink;
+}
+
+/* already visited */
+a:visited{
+
+}
+
+/* hovering */
+div:hover{
+
+}
+
+/* clicking on it */
+a:active{
+
+}
+
+.xyz{
+    /* transition: ; */
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: width 3s;
+}
+
+.xyz:hover{
+    width: 300px;
+}
