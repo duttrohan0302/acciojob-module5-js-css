@@ -1,0 +1,12 @@
+:root{
+    --bgColor:#abc123;
+}
+
+
+.xyzClass{
+    background-color: var(--bgColor);
+}
+
+.xyz2{
+    background-color: var(--bgColor);
+}

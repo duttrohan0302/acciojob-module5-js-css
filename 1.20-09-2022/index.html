@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Sum</title>
+</head>
+<body>
+    <div>
+        <h1 id="heading">Hello, welcome to JavaScript</h1>
+        <div id="calculate-sum-container">
+            <h2>
+                Calculate Sum Container
+            </h2>
+            <input type="number" name="number1" id="number1" placeholder="Enter first number">
+            <input type="number" name="number2" id="number2" placeholder="Enter second number">
+            <button onclick="getVariables()">Calculate</button>
+            <h3 id="output">No Result</h3>
+        </div>
+    </div>
+
+    <script>
+        // var x = 5;
+        // var y = 10;
+        // var z;
+        // z = x+y;
+        // console.log(z)
+
+        function getVariables(){
+            var firstNumberNode = document.getElementById("number1")
+            var secondNumberNode = document.getElementById("number2");
+            var firstNumberValue = parseInt(firstNumberNode.value)
+            var secondNumberValue = Number(secondNumberNode.value)
+
+            calculateSum(firstNumberValue, secondNumberValue)
+        }
+
+        function calculateSum(number1, number2){
+            var result = number1+number2;
+            showResult(result)
+        }
+
+        function showResult(result){
+            var outputNode = document.getElementById("output")
+            outputNode.innerText = result
+        }
+
+        // function calculateSum(){
+        //     var firstNumberNode = document.getElementById("number1")
+        //     var secondNumberNode = document.getElementById("number2");
+        //     var firstNumberValue = parseInt(firstNumberNode.value)
+        //     var secondNumberValue = Number(secondNumberNode.value)
+
+        //     var result = firstNumberValue+secondNumberValue;
+
+        //     var outputNode = document.getElementById("output")
+        //     outputNode.innerText = result
+        //     // outputNode.innerHTML = result
+        //     // outputNode.innerHTML = "<ul><li>"+result+"</li></ul>"
+        // }
+        // returnType function functionName(argType argName){
+
+        //     return returnType
+        // }
+    </script>
+</body>
+</html>
